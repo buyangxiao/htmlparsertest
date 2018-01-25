@@ -13,9 +13,8 @@ import org.jsoup.select.Elements;
  */
 public class Main {
   public static void main(String[] args) {
-//    String html = "您好，您可以点击 <a lizard-catch=\"off\" onclick=\"chatUrlJumpLib.Jump('http://123123123', 2)\" >这里</a> ssssssss。";
+    String html = "您好，您可以点击 <a lizard-catch=\"off\" onclick=\"chatUrlJumpLib.Jump('http://123123123', 2)\" >这里</a> ssssssss。";
 
-    String html = "携程专车订单用车前4小时以外可以修改，非携程专车订单或订单已过更改时间，请您在订单2018-02-20 11:20之前操作<a lizard-catch=\\\"off\\\" onclick=\\\"chatUrlJumpLib.Jump('https://m.ctrip.com/webapp/carch/chf/detail?oid=5229537581&oper=cancel', 2)\\\" >取消订单</a>重新预订，超时取消订单将有违约金，用车后不可取消。谢谢";
     String result = TransCodeHtmlToListV2(html);
     System.out.println(result);
   }
